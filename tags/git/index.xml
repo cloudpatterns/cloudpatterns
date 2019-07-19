@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Cloud Patterns</title>
+    <link>https://cloudpatterns.io/tags/git/</link>
+    <description>Recent content in git on Cloud Patterns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019, all rights reserved.</copyright>
+    <lastBuildDate>Sat, 16 Feb 2019 05:57:17 +0000</lastBuildDate>
+    
+	<atom:link href="https://cloudpatterns.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git CheatSheat</title>
+      <link>https://cloudpatterns.io/blog/git-cheatsheat/</link>
+      <pubDate>Sat, 16 Feb 2019 05:57:17 +0000</pubDate>
+      
+      <guid>https://cloudpatterns.io/blog/git-cheatsheat/</guid>
+      <description>Below is a list of some common git commands (incremrental list; will keep adding more commands). The list is prepared from various internet forums and blog posts :
+Create a new local repository Create a new blank repository that will host files that require to be version controlled : git init
+Create a local copy of remote repository Check out a repository for local code changes. This will be an exac copy of the remote repo that you can sync from at regular intervals : git clone /path/to/repository</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Git CheatSheat - Cloud Patterns</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="a collection of commonly used git commands">
+    <meta property="og:site_name" content="Cloud Patterns" />
+    <meta property="og:locale" content="nn_NO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://cloudpatterns.io/blog/git-cheatsheat/" />
+    <meta property="og:title" content="Git CheatSheat" />
+    <meta property="og:image" content="https://cloudpatterns.io/images/logo/logo.jpeg" />
+    <meta property="og:description" content="a collection of commonly used git commands" />
+
+    
+
+    <meta property="twitter:title" content="Git CheatSheat" />
+    <meta property="twitter:image" content="https://cloudpatterns.io/images/logo/logo.jpeg" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:description" content="a collection of commonly used git commands" />
+
+    
+
+    <link rel="canonical" href="https://cloudpatterns.io/blog/git-cheatsheat/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cloudpatterns.io/css/custom.css" />
+
+    
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/vs.min.css" integrity="sha256-iGs2TpBtdfGr1FIgzGyO4CKAD1+2QaDswtMmJwDtHAs=" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://cloudpatterns.io/images/logo/favicon.jpeg">
+
+    
+
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    
+    <div class="my-4 my-md-5 header">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto offset-md-1 d-none d-md-block">
+                
+                    <a href="https://cloudpatterns.io/">
+                        <img class="logo" src="https://cloudpatterns.io/images/logo/logo.jpeg" alt="logo">
+                    </a>
+                
+            </div>
+            <div class="col-auto align-self-center mr-auto">
+                <a href="https://cloudpatterns.io/">
+                    <h1 class="font-weight-bold name">Cloud Patterns</h1>
+                </a>
+
+                <ul class="nav nav-primary">
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-blog" href="https://cloudpatterns.io/blog/">
+                                
+                                Blog
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-categories" href="https://cloudpatterns.io/categories">
+                                
+                                Categories
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase nav-link text-about" href="https://cloudpatterns.io/about/">
+                                
+                                About
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+
+                <ul class="nav nav-secondary">
+                    
+                        <li class="nav-item">
+                            <a class="text-uppercase font-weight-bold nav-link text-bmc" href="https://cloudpatterns.io/">
+                                
+                                let&#39;s learn somethnig new
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10">
+                    <h1 class="mx-0 mx-md-4">Git CheatSheat</h1>
+
+                    <div class="mb-4 mb-md-5 meta">
+                        <span class="date" title='Sat Feb 16 2019 05:57:17 UTC'>
+                            February 16, 2019
+                        </span>
+
+                        
+                            
+                        
+
+                        <span class="reading-time middot">
+                            2 minutes
+                        </span>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                    <li class="d-inline middot">
+                                        <a href="https://cloudpatterns.io/tags/git">git</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="d-none d-md-inline tags">
+                            <ul class="list-unstyled d-inline">
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="markdown">
+                        
+    
+
+<p>Below is a list of some common git commands (incremrental list; will keep adding more commands). The list is prepared from various internet forums and blog posts :</p>
+
+<h5 id="create-a-new-local-repository"><strong>Create a new local repository</strong></h5>
+
+<p>Create a new blank repository that will host files that require to be version controlled : <code>git init</code></p>
+
+<h5 id="create-a-local-copy-of-remote-repository"><strong>Create a local copy of remote repository</strong></h5>
+
+<p>Check out a repository for local code changes. This will be an exac copy of the remote repo that you can sync from at regular intervals : <code>git clone /path/to/repository</code></p>
+
+<h5 id="add-files"><strong>Add files</strong></h5>
+
+<p>Add one or more files to staging (index) :</p>
+
+<pre><code class="language-bash"># add a specific file
+git add &lt;file_name&gt;
+
+# add all files, except the hidden or . files
+git add * 
+
+# add everything including hidden or .files
+git add .
+</code></pre>
+
+<h5 id="commit"><strong>Commit</strong></h5>
+
+<ul>
+<li>Commit changes to head (but not yet to the remote repository): <code>git commit -m &quot;Commit message&quot;</code></li>
+<li>Commit any files you&rsquo;ve added with git add, and also commit any files you&rsquo;ve changed since then : <code>git commit -a</code></li>
+</ul>
+
+<h5 id="push"><strong>Push</strong></h5>
+
+<p>Send changes to the master branch of your remote repository : <code>git push origin master</code></p>
+
+<h5 id="status"><strong>Status</strong></h5>
+
+<p>List the files you&rsquo;ve changed and those you still need to add or commit : <code>git status</code></p>
+
+<h5 id="remote-repositories"><strong>Remote Repositories</strong></h5>
+
+<ul>
+<li>If you haven&rsquo;t connected your local repository to a remote server, add the server to be able to push to it : <code>git remote add origin &lt;server&gt;</code></li>
+<li>List all currently configured remote repositories : <code>git remote -v</code></li>
+</ul>
+
+<h5 id="branches"><strong>Branches</strong></h5>
+
+<ul>
+<li>Create a new branch and switch to it : <code>git checkout -b &lt;branchname&gt;</code></li>
+<li>Switch from one branch to another : <code>git checkout &lt;branchname&gt;</code></li>
+<li>List all the branches in your repo, and also tell you what branch you&rsquo;re currently in : <code>git branch</code></li>
+<li>Delete the feature branch : <code>git branch -d &lt;branchname&gt;</code></li>
+<li>Push Code Changes : <code>git push origin &lt;branchname&gt;</code></li>
+<li>Delete a branch on your remote repository: <code>git push origin :&lt;branchname&gt;</code></li>
+</ul>
+
+<h5 id="updates"><strong>Updates</strong></h5>
+
+<ul>
+<li>Fetch and merge changes on the remote server to your working directory : <code>git pull</code></li>
+<li>To merge a different branch into your active branch : <code>git merge &lt;branch_name&gt;</code></li>
+<li>Undo last merge before commiting : <code>git merge --abort</code></li>
+<li>View all the merge conflicts : <code>git diff</code></li>
+<li>Preview changes, before merging : <code>git diff &lt;source_branch_name&gt; &lt;target_branch_name&gt;</code></li>
+<li>Undo local changes : <code>git checkout -- &lt;filename&gt;</code></li>
+<li>Drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it : <code>git fetch origin &amp;&amp; git reset --hard origin/master</code></li>
+</ul>
+
+<hr />
+
+
+
+                    </div>
+
+                    
+
+                    
+                        <div class="mt-5 mx-0 mx-md-4 disqus">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    this.page.identifier = 'git-cheatsheat';
+    this.page.title = 'Git CheatSheat';
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cloudpatterns" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-4 footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5">
+                <div class="mx-0 mx-md-4 mb-2 text-center text-md-left">
+                    
+
+                    
+                        
+                            <a href="https://cloudpatterns.io/license">© 2019 by gaurs.io</a>
+                        
+                    
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <div class="mx-0 mx-md-4 text-center text-md-right">
+                    
+
+                    
+
+                    
+
+                    
+                        <a href="https://github.com/gaurs" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                            <img class="icon" src="https://cloudpatterns.io/img/github.svg" alt="github" />
+                        </a>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <a href="https://www.linkedin.com/in/sumit-gaur" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                            <img class="icon" src="https://cloudpatterns.io/img/linkedin.svg" alt="linkedin" />
+                        </a>
+                    
+
+                    
+                        <a href="mailto:cloudpatterns@gaurs.io" class="mx-1 ml-md-2 mr-md-0">
+                            <img class="icon" src="https://cloudpatterns.io/img/email.svg" alt="email" />
+                        </a>
+                    
+
+                    
+                        <a href="https://cloudpatterns.io/index.xml" class="mx-1 ml-md-2 mr-md-0">
+                            <img class="icon" src="https://cloudpatterns.io/img/rss.svg" alt="rss" />
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Raleway:400,600,700', 'Merriweather:300,300i,700,700i']
+            }
+        });
+    </script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js" integrity="sha256-js+I1fdbke/DJrW2qXQlrw7VUEqmdeFeOW37UC0bEiU=" crossorigin="anonymous"></script>  
+    	
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"i integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous">
+	MathJax.Hub.Config({
+	tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		displayMath: [['$$','$$']],
+		processEscapes: true,
+		processEnvironments: true,
+		skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+		TeX: { equationNumbers: { autoNumber: "AMS" },
+			extensions: ["AMSmath.js", "MSsymbols.js"] }
+		}  
+	});
+
+	MathJax.Hub.Queue(function() {
+		
+		
+		
+		var all = MathJax.Hub.getAllJax(), i;
+		for(i = 0; i < all.length; i += 1) {         
+			all[i].SourceElement().parentNode.className += ' has-jax';     
+		}
+	});
+
+	MathJax.Hub.Config({
+		
+	  	TeX: { equationNumbers: { autoNumber: "AMS" } }   
+	});	
+
+	</script>
+    
+
+    
+    
+</body>
+
+</html>

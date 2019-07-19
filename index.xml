@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud computing and microservices on Cloud Patterns</title>
+    <link>https://cloudpatterns.io/</link>
+    <description>Recent content in cloud computing and microservices on Cloud Patterns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019, all rights reserved.</copyright>
+    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cloudpatterns.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git CheatSheat</title>
+      <link>https://cloudpatterns.io/blog/git-cheatsheat/</link>
+      <pubDate>Sat, 16 Feb 2019 05:57:17 +0000</pubDate>
+      
+      <guid>https://cloudpatterns.io/blog/git-cheatsheat/</guid>
+      <description>Below is a list of some common git commands (incremrental list; will keep adding more commands). The list is prepared from various internet forums and blog posts :
+Create a new local repository Create a new blank repository that will host files that require to be version controlled : git init
+Create a local copy of remote repository Check out a repository for local code changes. This will be an exac copy of the remote repo that you can sync from at regular intervals : git clone /path/to/repository</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://cloudpatterns.io/about/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudpatterns.io/about/</guid>
+      <description>Hi, my name is Sumit. I am full-time java developer for the last 8 years. I have been working on the cloud and related technologies for most of my career in various capacities. I started this blog to share my learnings with the community.
+I would certainly welcome any suggestions that you may have. Please drop me an email or you can also contact me at:
+ https://github.com/gaurs https://www.linkedin.com/in/sumit-gaur-87114926/  </description>
+    </item>
+    
+  </channel>
+</rss>
